@@ -10,7 +10,6 @@
     "editor.formatOnSave": true,
     "prettier.printWidth": 120,
     "prettier.arrowParens": "avoid",
-    "workbench.colorTheme": "Caelestia",
     "diffEditor.hideUnchangedRegions.enabled": true,
     "workbench.list.smoothScrolling": true,
     "editor.smoothScrolling": true,
@@ -18,7 +17,7 @@
     "javascript.preferences.importModuleSpecifierEnding": "minimal",
     "typescript.preferences.importModuleSpecifierEnding": "minimal",
     "editor.codeActionsOnSave": {
-        "source.organizeImports": "explicit"
+        "source.organizeImports": "explicit",
     },
     "codeium.enableCodeLens": false,
     "typescript.preferences.preferTypeOnlyAutoImports": true,
@@ -28,23 +27,29 @@
     "codeium.enableConfig": {
         "*": true,
         "fish": true,
-        "qml": true
+        "qml": true,
     },
     "[c]": {
-        "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
+        "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd",
     },
     "[cpp]": {
-        "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
+        "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd",
     },
     "doxdocgen.generic.boolReturnsTrueFalse": false,
     "terminal.integrated.enableMultiLinePasteWarning": "never",
     "qt-qml.qmlls.additionalImportPaths": ["/usr/lib/qt6/qml"],
     "[python]": {
-        "editor.defaultFormatter": "charliermarsh.ruff"
+        "editor.defaultFormatter": "charliermarsh.ruff",
     },
     "ruff.lineLength": 120,
     "python.languageServer": "Pylance",
     "editor.inlayHints.enabled": "off",
     "qt-qml.qmlls.customExePath": "/usr/bin/qmlls6",
-    "qt-qml.doNotAskForQmllsDownload": true
+    "qt-qml.doNotAskForQmllsDownload": true,
+    "mssql.connectionGroups": [
+        {
+            "name": "ROOT",
+            "id": "65A8A4DB-8AEA-4D88-B192-B17D781B3EF9",
+        },
+    ],
 }
