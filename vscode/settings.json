@@ -52,4 +52,5 @@
             "id": "65A8A4DB-8AEA-4D88-B192-B17D781B3EF9",
         },
     ],
+    "python.defaultInterpreterPath": "/sbin/python3.14",
 }
