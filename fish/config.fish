@@ -32,6 +32,21 @@ if status is-interactive
     abbr la 'ls -a'
     abbr lla 'ls -la'
 
+    # VPN shortcuts
+    alias vpn-connect='sudo pon dngx_vpn'
+    alias vpn-disconnect='sudo poff dngx_vpn'
+    alias vpn-status='ip addr show ppp0 2>/dev/null && ip route | grep ppp0 || echo "VPN not connected"'
+    alias vpn-debug='sudo pon dngx_vpn debug dump logfd 2 nodetach'
+    alias vpn-split='dngx-vpn mode split'
+    alias vpn-full='dngx-vpn mode full'
+    alias vpn-toggle='dngx-vpn toggle-mode'    
+
+    # If connecting via SSH, use compatible TERM
+    if set -q SSH_CONNECTION
+      set -gx TERM xterm-256color
+    end
+
+
     # Custom colours
     cat ~/.local/state/caelestia/sequences.txt 2> /dev/null
 
