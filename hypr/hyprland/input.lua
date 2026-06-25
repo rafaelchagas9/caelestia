@@ -2,10 +2,12 @@ local vars = require("variables")
 
 hl.config({
     input = {
-        kb_layout          = "us",
-        numlock_by_default = false,
+        kb_layout          = "br",
+        kb_variant         = "abnt2",
+        numlock_by_default = true,
         repeat_delay       = 250,
         repeat_rate        = 35,
+        accel_profile      = "flat",
         focus_on_close     = 1,
 
         touchpad           = {

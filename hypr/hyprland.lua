@@ -58,6 +58,30 @@ hl.monitor({
     scale    = 1,
 })
 
+hl.monitor({
+    output        = "HDMI-A-1",
+    mode          = "3840x2160@120",
+    position      = "0x0",
+    scale         = 1,
+    cm            = "hdr",
+    bitdepth      = 10,
+    sdrbrightness = 1.4,
+})
+
+hl.monitor({
+    output        = "DP-3",
+    mode          = "1920x1080@144",
+    position      = "3840x0",
+    scale         = 1,
+    sdrbrightness = 1.2,
+})
+
+hl.config({
+    xwayland = {
+        force_zero_scaling = true,
+    },
+})
+
 -- Configs
 require("hyprland.env")
 require("hyprland.general")
