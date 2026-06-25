@@ -6,10 +6,10 @@ return {
     ------------------
 
     -- Apps
-    terminal                   = "foot",
-    browser                    = "firefox",
-    editor                     = "codium",
-    fileExplorer               = "thunar",
+    terminal                   = "ghostty",
+    browser                    = "brave-origin-nightly",
+    editor                     = "zeditor",
+    fileExplorer               = "dolphin",
     audioSettings              = "pavucontrol",
 
     -- Touchpad
@@ -20,7 +20,7 @@ return {
     gestureFingersMore         = 4,
 
     -- Blur
-    blurEnabled                = true,
+    blurEnabled                = false,
     blurSpecialWs              = false,
     blurPopups                 = true,
     blurInputMethods           = true,
@@ -30,9 +30,9 @@ return {
 
     -- Shadow
     shadowEnabled              = true,
-    shadowRange                = 15,
-    shadowRenderPower          = 4,
-    shadowColour               = "rgba(" .. scheme.inversePrimary .. "10)",
+    shadowRange                = 20,
+    shadowRenderPower          = 3,
+    shadowColour               = "rgba(" .. scheme.surface .. "d4)",
 
     -- Gaps
     workspaceGaps              = 20,
@@ -41,17 +41,17 @@ return {
     singleWindowGapsOut        = 20,
 
     -- Window styling
-    windowOpacity              = 0.95,
+    windowOpacity              = 1,
     windowRounding             = 15,
     windowBorderSize           = 1,
     activeWindowBorderColour   = "rgba(" .. scheme.primary .. "e6)",
     inactiveWindowBorderColour = "rgba(" .. scheme.onSurfaceVariant .. "11)",
 
     -- Misc
-    volumeStep                 = 10,
+    volumeStep                 = 5,
     volumeMax                  = 100,
-    cursorTheme                = "sweet-cursors",
-    cursorSize                 = 24,
+    cursorTheme                = "Bibata-Modern-Ice",
+    cursorSize                 = 28,
     sleepGestureCmd            = "systemctl suspend-then-hibernate",
 
     ------------------
@@ -73,12 +73,12 @@ return {
     kbToggleGroup              = "SUPER + Comma",
 
     -- Window Action
-    kbMoveWindow               = "SUPER + Z",
+    kbMoveWindow               = "SUPER + ALT + Z",
     kbResizeWindow             = "SUPER + X",
     kbWindowPip                = "SUPER + ALT + backslash",
     kbPinWindow                = "SUPER + P",
     kbWindowFullscreen         = "SUPER + F",
-    kbWindowBorderedFullscreen = "SUPER + ALT + F",
+    kbWindowBorderedFullscreen = "SUPER + SHIFT + F",
     kbToggleWindowFloating     = "SUPER + ALT + space",
     kbCloseWindow              = "SUPER + Q",
 

@@ -3,6 +3,11 @@ local fn   = require("hyprland.functions")
 
 -- Launcher
 hl.bind("SUPER + SUPER_L", hl.dsp.global("caelestia:launcher"), { release = true })
+hl.bind("SUPER + SUPER_R", hl.dsp.global("caelestia:launcher"), { release = true })
+hl.bind("SUPER + mouse:274", hl.dsp.global("caelestia:launcherInterrupt"), { ignore_mods = true, non_consuming = true })
+hl.bind("SUPER + mouse:275", hl.dsp.global("caelestia:launcherInterrupt"), { ignore_mods = true, non_consuming = true })
+hl.bind("SUPER + mouse:276", hl.dsp.global("caelestia:launcherInterrupt"), { ignore_mods = true, non_consuming = true })
+hl.bind("SUPER + mouse:277", hl.dsp.global("caelestia:launcherInterrupt"), { ignore_mods = true, non_consuming = true })
 
 -- Misc
 hl.bind(vars.kbSession, hl.dsp.global("caelestia:session"))
@@ -100,7 +105,7 @@ hl.bind("SUPER + ALT + up", hl.dsp.window.resize(fn.resize_active_window(0, -10)
 hl.bind("SUPER + ALT + down", hl.dsp.window.resize(fn.resize_active_window(0, 10)), { repeating = true })
 
 hl.bind("SUPER + mouse:272", hl.dsp.window.drag(), { mouse = true })
-hl.bind(vars.kbMoveWindow, hl.dsp.window.drag(), { mouse = true })
+hl.bind("SUPER + ALT + Z", hl.dsp.window.drag(), { mouse = true })
 hl.bind("SUPER + mouse:273", hl.dsp.window.resize(), { mouse = true })
 hl.bind(vars.kbResizeWindow, hl.dsp.window.resize(), { mouse = true })
 hl.bind("CTRL + SUPER + Backslash", hl.dsp.window.center())
@@ -141,12 +146,14 @@ hl.bind("SUPER + A", hl.dsp.exec_cmd("caelestia toggle grid"))
 -- Apps
 hl.bind(vars.kbTerminal, hl.dsp.exec_cmd(vars.terminal))
 hl.bind(vars.kbBrowser, hl.dsp.exec_cmd(vars.browser))
+hl.bind("SUPER + Z", hl.dsp.exec_cmd("zen-browser"))
 hl.bind(vars.kbEditor, hl.dsp.exec_cmd(vars.editor))
 hl.bind(vars.kbFileExplorer, hl.dsp.exec_cmd(vars.fileExplorer))
 hl.bind("SUPER + G", hl.dsp.exec_cmd("github-desktop"))
 hl.bind("SUPER + ALT + E", hl.dsp.exec_cmd("nemo"))
 hl.bind("CTRL + ALT + Escape", hl.dsp.exec_cmd("qps"))
 hl.bind("CTRL + ALT + V", hl.dsp.exec_cmd(vars.audioSettings))
+hl.bind("SUPER + B", hl.dsp.exec_cmd("brave-origin-nightly --refresh-platform-policy --force-device-scale-factor=1.25"))
 
 -- Utilities
 hl.bind("Print", hl.dsp.exec_cmd("~/.local/bin/shot-focused-monitor"), { locked = true })
@@ -161,6 +168,7 @@ hl.bind("SUPER + SHIFT + C", hl.dsp.exec_cmd("hyprpicker -a"))
 hl.bind("XF86AudioMicMute", hl.dsp.exec_cmd("wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"), { locked = true })
 hl.bind("XF86AudioMute", hl.dsp.exec_cmd("wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"), { locked = true })
 hl.bind("SUPER + SHIFT + M", hl.dsp.exec_cmd("wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"), { locked = true })
+hl.bind("CTRL + SHIFT + Space", hl.dsp.exec_cmd("handy --toggle-transcription"))
 hl.bind(
     "XF86AudioRaiseVolume",
     hl.dsp.exec_cmd(
@@ -199,3 +207,4 @@ hl.bind(
         " -a 'Shell' -A 'Test1=I got it!' -A 'Test2=Another action'"
     )
 )
+hl.bind("SUPER + J", hl.dsp.layout("preselect t"))

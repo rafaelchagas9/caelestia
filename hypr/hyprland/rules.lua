@@ -45,6 +45,8 @@ hl.window_rule({ match = { class = "foot", title = "nmtui" }, tag = "+float_60_7
 hl.window_rule({ match = { class = "org.pulseaudio.pavucontrol|yad-icon-browser" }, tag = "+float_60_70" })
 hl.window_rule({ match = { class = "com.gabm.satty" }, tag = "+float_60_70" })
 hl.window_rule({ match = { class = "org.gnome.Settings" }, tag = "+float_70_80" })
+hl.window_rule({ match = { class = "xdg-desktop-portal-gtk" }, tag = "+float_70_80" })
+hl.window_rule({ match = { title = "(Selecionar|Abrir)( a| o)? (Arquivo|Pasta)(s)?" }, tag = "+float_70_80" })
 hl.window_rule({ match = { class = "nwg-look" }, tag = "+float_50_60" })
 
 hl.window_rule({
@@ -112,6 +114,8 @@ hl.window_rule({ name = "first-descendant-monitor", match = { class = "^(steam_a
 hl.window_rule({ name = "godot-main-editor-tiled", match = { class = "^(Godot)$", title = "^(Godot)(.*)$" }, tile = true })
 hl.window_rule({ name = "godot-tool-windows-floating", match = { class = "^(Godot)$", title = "^(?!Godot)(.*)$" }, float = true })
 hl.window_rule({ match = { class = "com.gabm.satty" }, maximize = false, fullscreen = false })
+hl.window_rule({ match = { class = "xdg-desktop-portal-gtk" }, maximize = false, fullscreen = false })
+hl.window_rule({ match = { title = "(Selecionar|Abrir)( a| o)? (Arquivo|Pasta)(s)?" }, maximize = false, fullscreen = false })
 
 -------------------------
 ---- Workspace rules ----
@@ -120,7 +124,7 @@ hl.window_rule({ match = { class = "com.gabm.satty" }, maximize = false, fullscr
 hl.workspace_rule({ workspace = "w[tv1]s[false]", gaps_out = vars.singleWindowGapsOut })
 hl.workspace_rule({ workspace = "f[1]s[false]", gaps_out = vars.singleWindowGapsOut })
 hl.workspace_rule({ workspace = "8", layout = "scrolling", layout_opts = { direction = "right" } })
-hl.workspace_rule({ workspace = "special:grid", layout_opts = { smart_split = true, preserve_split = true } })
+hl.workspace_rule({ workspace = "special:grid", layout = "dwindle", layout_opts = { smart_split = true, preserve_split = true } })
 
 ---------------------
 ---- Layer rules ----

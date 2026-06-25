@@ -4,7 +4,7 @@ hl.config({
     general = {
         layout          = "dwindle",
 
-        allow_tearing   = false, -- Allows `immediate` window rule to work
+        allow_tearing   = true, -- Allows `immediate` window rule to work
 
         gaps_workspaces = vars.workspaceGaps,
         gaps_in         = vars.windowGapsIn,
@@ -25,8 +25,9 @@ hl.config({
 
     scrolling = {
         fullscreen_on_one_column = true,
+        direction                = "right",
         focus_fit_method         = 1,
-        column_width             = 0.5,
+        column_width             = 0.9,
         follow_focus             = true,
         follow_min_visible       = 0.0,
         explicit_column_widths   = "0.35, 0.5, 0.65, 1.0",
