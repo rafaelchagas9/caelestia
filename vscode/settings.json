@@ -33,7 +33,7 @@
         "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd",
     },
     "[cpp]": {
-        "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd",
+        "editor.defaultFormatter": "ms-vscode.cpptools",
     },
     "doxdocgen.generic.boolReturnsTrueFalse": false,
     "terminal.integrated.enableMultiLinePasteWarning": "never",
@@ -49,8 +49,20 @@
     "mssql.connectionGroups": [
         {
             "name": "ROOT",
-            "id": "65A8A4DB-8AEA-4D88-B192-B17D781B3EF9",
+            "id": "ROOT",
         },
     ],
-    "python.defaultInterpreterPath": "/sbin/python3.14",
+    "python.defaultInterpreterPath": "/usr/bin/python3",
+    "github.copilot.enable": {
+        "*": false,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false,
+    },
+    "editor.fontFamily": "'Droid Sans Mono'",
+    "chat.viewSessions.orientation": "stacked",
+    "[blade]": {},
+    "[sql]": {
+        "editor.defaultFormatter": "ms-mssql.mssql",
+    },
 }

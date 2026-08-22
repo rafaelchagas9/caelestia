@@ -66,6 +66,7 @@ hl.monitor({
     cm            = "hdr",
     bitdepth      = 10,
     sdrbrightness = 1.4,
+    vrr           = 3
 })
 
 hl.monitor({
@@ -74,6 +75,7 @@ hl.monitor({
     position      = "3840x0",
     scale         = 1,
     sdrbrightness = 1.2,
+    vrr           = 2
 })
 
 hl.config({

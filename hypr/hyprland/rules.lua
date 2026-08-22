@@ -187,6 +187,15 @@ hl.window_rule({ match = { class = "com.gabm.satty" }, maximize = false, fullscr
 hl.window_rule({ match = { class = "xdg-desktop-portal-gtk" }, maximize = false, fullscreen = false })
 hl.window_rule({ match = { title = "(Selecionar|Abrir)( a| o)? (Arquivo|Pasta)(s)?" }, maximize = false, fullscreen = false })
 
+-- Codex floating windows
+hl.window_rule({
+    match = {
+        initial_class = "codex-desktop",
+        float = true,
+    },
+    decorate = false,
+    border_size = 0
+})
 
 -------------------------
 ---- Tag definitions ----
